@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.7
+      python: 3.9
     commands:
       - echo "Installing requirements"
       - pip install --upgrade --force-reinstall boto3 awscli # Upgrade boto3 and awscli
