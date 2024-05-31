@@ -7,7 +7,7 @@ Resources:
       FunctionName: mlops-add-transform-header
       CodeUri: .
       Handler: sagemaker_add_transform_header.lambda_handler
-      Runtime: python3.7
+      Runtime: python3.9
       Role: !GetAtt SagemakerCustomResourceRole.Arn
       Description: "Prepend header to a batch transform job"
 
@@ -17,7 +17,7 @@ Resources:
       FunctionName: mlops-create-experiment
       CodeUri: .
       Handler: sagemaker_create_experiment.lambda_handler
-      Runtime: python3.7
+      Runtime: python3.9
       Role: !GetAtt SagemakerCustomResourceRole.Arn
       Description: "Create a SageMaker experiment and trial"
 
@@ -27,7 +27,7 @@ Resources:
       FunctionName: mlops-query-drift
       CodeUri: .
       Handler: sagemaker_query_drift.lambda_handler
-      Runtime: python3.7
+      Runtime: python3.9
       Role: !GetAtt SagemakerCustomResourceRole.Arn
       Description: "Query processing job to return drift"
 
@@ -37,7 +37,7 @@ Resources:
       FunctionName: mlops-query-training
       CodeUri: .
       Handler: sagemaker_query_training.lambda_handler
-      Runtime: python3.7
+      Runtime: python3.9
       Role: !GetAtt SagemakerCustomResourceRole.Arn
       Description: "Query training job to return results"
 
